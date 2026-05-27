@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GlowviqueAI.com - Personalized Skincare Recommendations</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <div class="logo">
+                <span class="logo-icon">✨</span>
+                <h1>GlowviqueAI.com</h1>
+            </div>
+            <p class="tagline">Your Personal Skincare Expert</p>
+        </header>
+
+        <!-- Main Content -->
+        <main>
+            <!-- Skin Type Quiz Section -->
+            <section id="quiz-section" class="section active">
+                <div class="section-header">
+                    <h2>Discover Your Perfect Skincare Routine</h2>
+                    <p>Answer a few questions to get personalized product recommendations</p>
+                </div>
+
+                <div class="quiz-container">
+                    <!-- Question 1: Skin Type -->
+                    <div class="question-card">
+                        <h3>What is your skin type?</h3>
+                        <div class="options-grid">
+                            <button class="option-btn" data-question="skinType" data-value="oily">
+                                <span class="option-icon">💧</span>
+                                <span class="option-text">Oily</span>
+                                <span class="option-desc">Shiny, large pores</span>
+                            </button>
+                            <button class="option-btn" data-question="skinType" data-value="dry">
+                                <span class="option-icon">🏜️</span>
+                                <span class="option-text">Dry</span>
+                                <span class="option-desc">Flaky, tight feeling</span>
+                            </button>
+                            <button class="option-btn" data-question="skinType" data-value="combination">
+                                <span class="option-icon">🌓</span>
+                                <span class="option-text">Combination</span>
+                                <span class="option-desc">Oily T-zone, dry cheeks</span>
+                            </button>
+                            <button class="option-btn" data-question="skinType" data-value="sensitive">
+                                <span class="option-icon">🌸</span>
+                                <span class="option-text">Sensitive</span>
+                                <span class="option-desc">Easily irritated, reactive</span>
+                            </button>
+                            <button class="option-btn" data-question="skinType" data-value="normal">
+                                <span class="option-icon">✅</span>
+                                <span class="option-text">Normal</span>
+                                <span class="option-desc">Balanced, no issues</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Question 2: Main Concern -->
+                    <div class="question-card">
+                        <h3>What is your main skin concern?</h3>
+                        <div class="options-grid">
+                            <button class="option-btn" data-question="concern" data-value="acne">
+                                <span class="option-icon">🔴</span>
+                                <span class="option-text">Acne & Breakouts</span>
+                            </button>
+                            <button class="option-btn" data-question="concern" data-value="aging">
+                                <span class="option-icon">⏰</span>
+                                <span class="option-text">Anti-Aging</span>
+                            </button>
+                            <button class="option-btn" data-question="concern" data-value="hydration">
+                                <span class="option-icon">💦</span>
+                                <span class="option-text">Hydration</span>
+                            </button>
+                            <button class="option-btn" data-question="concern" data-value="brightening">
+                                <span class="option-icon">✨</span>
+                                <span class="option-text">Brightening</span>
+                            </button>
+                            <button class="option-btn" data-question="concern" data-value="texture">
+                                <span class="option-icon">🎯</span>
+                                <span class="option-text">Texture & Pores</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Question 3: Budget -->
+                    <div class="question-card">
+                        <h3>What's your budget range?</h3>
+                        <div class="options-grid">
+                            <button class="option-btn" data-question="budget" data-value="budget">
+                                <span class="option-icon">💰</span>
+                                <span class="option-text">Budget-Friendly</span>
+                                <span class="option-desc">Under ₹1,000</span>
+                            </button>
+                            <button class="option-btn" data-question="budget" data-value="mid">
+                                <span class="option-icon">💎</span>
+                                <span class="option-text">Mid-Range</span>
+                                <span class="option-desc">₹1,000 - ₹3,000</span>
+                            </button>
+                            <button class="option-btn" data-question="budget" data-value="luxury">
+                                <span class="option-icon">👑</span>
+                                <span class="option-text">Luxury</span>
+                                <span class="option-desc">₹3,000+</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <button id="get-recommendations" class="cta-button" disabled>
+                        Get My Personalized Recommendations
+                    </button>
+                </div>
+            </section>
+
+            <!-- Results Section -->
+            <section id="results-section" class="section">
+                <div class="section-header">
+                    <h2>Your Personalized Skincare Routine</h2>
+                    <p id="results-subtitle"></p>
+                </div>
+
+                <div id="ai-analysis" class="ai-analysis">
+                    <div class="ai-badge">
+                        <span class="ai-icon">🤖</span>
+                        <span>AI Analysis</span>
+                    </div>
+                    <p id="ai-message"></p>
+                </div>
+
+                <div id="recommendations-container" class="recommendations-container">
+                    <!-- Products will be dynamically inserted here -->
+                </div>
+
+                <button id="retake-quiz" class="secondary-button">
+                    Take Quiz Again
+                </button>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer>
+            <p>© 2024 GlowviqueAI.com. Product recommendations are AI-generated based on your inputs.</p>
+            <p class="disclaimer">Disclaimer: Always patch test new products. Consult a dermatologist for specific skin concerns.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
