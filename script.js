@@ -746,5 +746,4 @@ function resetQuiz() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
-// Made with Bob
 
