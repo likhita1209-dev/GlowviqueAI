@@ -20,7 +20,7 @@ A beautiful, AI-powered skincare recommendation website that helps users discove
 
 ## 🚀 Live Demo
 
-Visit: [www.glowviqueai.com](https://www.glowviqueai.com)
+Visit: https://likhita1209-dev.github.io/GlowviqueAI/index.html
 
 ## 📦 Project Structure
 
@@ -91,7 +91,7 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## 📧 Contact
 
-For questions or support, please contact: support@glowviqueai.com
+For questions or support, please contact: https://likhita1209-dev.github.io/GlowviqueAI/index.html
 
 ## 🙏 Acknowledgments
 
