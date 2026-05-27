@@ -32,53 +32,7 @@ glowviqueai/
 ├── CNAME              # Custom domain configuration
 ├── netlify.toml       # Netlify deployment config
 ├── vercel.json        # Vercel deployment config
-└── DEPLOYMENT_GUIDE.md # Detailed deployment instructions
-```
 
-## 🏃‍♂️ Running Locally
-
-1. Clone the repository:
-```bash
-git clone https://github.com/YOUR_USERNAME/glowviqueai.git
-cd glowviqueai
-```
-
-2. Open with a local server:
-```bash
-# Using Python
-python -m http.server 8000
-
-# Using Node.js
-npx serve
-
-# Or simply open index.html in your browser
-```
-
-3. Visit `http://localhost:8000` in your browser
-
-## 🌐 Deployment
-
-See [DEPLOYMENT_GUIDE.md](DEPLOYMENT_GUIDE.md) for detailed deployment instructions.
-
-### Quick Deploy Options:
-
-**Netlify (Recommended)**
-1. Sign up at [netlify.com](https://www.netlify.com)
-2. Drag and drop your project folder
-3. Add custom domain: www.glowviqueai.com
-4. Configure DNS at your domain registrar
-
-**Vercel**
-```bash
-npm install -g vercel
-vercel
-```
-
-**GitHub Pages**
-1. Push code to GitHub
-2. Enable GitHub Pages in repository settings
-3. Add CNAME file with your domain
-4. Configure DNS
 
 ## 🎨 Customization
 
